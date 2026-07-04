@@ -159,10 +159,11 @@ back to simulated automatically after 30s so the demo never freezes.
 
 
 Team Information
+
 Team Name: Deep-Sea
 
-Team Members
-Shafin
-Shrabonee
-Asif
-Umiaya
+Team Members:
+1.Shafin
+2.Shrabonee
+3.Asif
+4.Umiaya
