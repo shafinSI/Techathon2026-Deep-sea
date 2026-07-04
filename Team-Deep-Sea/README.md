@@ -156,3 +156,13 @@ engine, dashboard, and (if built) bot keep working completely unchanged,
 because both simulated and live rooms write into the exact same `Device`/
 `EnvironmentReading` records. If the board disconnects, the room falls
 back to simulated automatically after 30s so the demo never freezes.
+
+
+Team Information
+Team Name: Deep-Sea
+
+Team Members
+Shafin
+Shrabonee
+Asif
+Umiaya
