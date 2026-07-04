@@ -1,0 +1,24 @@
+{
+  "name": "soms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Smart Office Management System — root dev orchestrator (backend + dashboard + Discord bot)",
+  "workspaces": [
+    "soms-backend",
+    "soms-discord-bot"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:all": "concurrently -n backend,frontend,bot -c blue,green,magenta \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:bot\"",
+    "dev:backend": "npm run start --workspace=soms-backend",
+    "dev:frontend": "serve soms-frontend-wired/dist -l 8080",
+    "dev:bot": "npm run start --workspace=soms-discord-bot",
+    "setup": "npm install && npm run setup:env",
+    "setup:env": "node scripts/setup-env.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "serve": "^14.2.3"
+  }
+}
